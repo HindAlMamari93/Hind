@@ -77,7 +77,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AppendLine" sap:VirtualizedContainerService.HintSize="1194.6666666666667,929.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AppendLine" sap:VirtualizedContainerService.HintSize="640.6666666666666,1048" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="fileExists" />
     </Sequence.Variables>
@@ -87,7 +87,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:FileExistsX DisplayName="File Exists" Exists="[fileExists]" sap:VirtualizedContainerService.HintSize="418,168.66666666666666" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="C:\Users\102419\OneDrive - OQ\Documents\UiPath\Global\Hind\Hind.txt" />
-    <If Condition="[fileExists = True]" sap:VirtualizedContainerService.HintSize="418,738" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[fileExists = True]" sap:VirtualizedContainerService.HintSize="418,747.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,219.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
@@ -110,5 +110,6 @@
         </Sequence>
       </If.Else>
     </If>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="418,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hi&quot;]" />
   </Sequence>
 </Activity>
